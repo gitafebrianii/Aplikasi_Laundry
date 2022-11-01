@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gggg"
+    android:id="@+id/activity_welcome"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="@string/selamatdatang"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/notes"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/notes"
+                android:layout_marginTop="150dp"/>
+            <TextView
+                android:layout_below="@+id/notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List Order"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/transaction"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/notes"
+                android:layout_marginTop="-95dp"
+                android:layout_marginLeft="150dp"
+                android:src="@drawable/transaction" />
+            <TextView
+                android:layout_below="@+id/transaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transaksi"
+                android:layout_marginLeft="150dp"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/transaction"
+                android:layout_marginTop="-103dp"
+                android:layout_marginLeft="300dp"
+                android:src="@drawable/profile" />
+            <TextView
+                android:layout_below="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer"
+                android:layout_marginLeft="300dp"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/towels"
+                android:layout_below="@+id/notes"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/towels"/>
+            <TextView
+                android:layout_below="@+id/notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ambil Cucian"
+                android:layout_marginTop="150dp"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/dollar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/towels"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="-102dp"
+                android:src="@drawable/dollar" />
+            <TextView
+                android:layout_below="@+id/transaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pengeluaran"
+                android:layout_marginTop="145dp"
+                android:layout_marginLeft="149dp"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/dollar"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="-96dp"
+                android:src="@drawable/settings" />
+            <TextView
+                android:layout_below="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Setting"
+                android:layout_marginTop="146dp"
+                android:layout_marginLeft="310dp"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/diagram"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/towels"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/diagram" />
+            <TextView
+                android:layout_below="@+id/towels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laporan Harian"
+                android:layout_marginTop="150dp"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
